@@ -1,0 +1,23 @@
+.icons__clic {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--social-link-color);
+    transition: border-color var(--animation-link), fill var(--animation-link);
+    &:hover,
+    &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+}
+}
+
+.icons__list {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+

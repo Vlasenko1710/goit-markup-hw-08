@@ -1,0 +1,33 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 528px;
+    height: 581px;
+    background-color: var(--white-color);
+    transform: translate(-50%, -50%) scaleY(1);
+    transition: transform var(--animation-link);
+    .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scaleY(0);
+}
+}
+.close-modal-clic {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transform: fill var(--animation-link);
+    &:hover {
+    fill: var(--accent-color);
+}
+}
+

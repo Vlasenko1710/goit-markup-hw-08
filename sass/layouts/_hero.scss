@@ -1,0 +1,35 @@
+.banner {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #2f303a;
+    text-align: center;
+    max-width: 1600px;
+   
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero-fon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+      
+    }
+  .hero__banner{
+ margin-left:auto;
+    margin-right:auto;
+  }
+.banner__btn{
+    margin-top: 30px;
+}
+.banner__title {
+    color: var(--white-color);
+    width: 696px;
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+

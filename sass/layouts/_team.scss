@@ -1,0 +1,64 @@
+.people {
+    background-color: var(--secondary-color-fon);
+}
+
+.people__title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.people__text {
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.people__list {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.people__card {
+    background: #ffffff;
+    outline: 1px solid #eeeeee;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.people__title {
+    margin-bottom: 10px;
+}
+
+.people__information {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.social__clic {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--social-link-color);
+    transition: background-color var(--animation-link), fill var(--animation-link);
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+}
+}
+.social-list {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    justify-content: center;
+}
