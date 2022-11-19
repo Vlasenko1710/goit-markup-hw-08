@@ -24,10 +24,10 @@
     gap: 30px;
 }
 
-// .cards {
-//     padding-bottom: 0;
-// }
-
+.cards {
+   @include desktop {padding-bottom: 0;
+}
+}
 .cards__item {
     display: block;
     width: 100%;

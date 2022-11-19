@@ -1,5 +1,7 @@
 .icons__clic {
-    width: 170px;
+    // width: 170px;
+    
+    // height: auto;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -13,11 +15,28 @@
     border-color: var(--accent-color);
     fill: var(--accent-color);
 }
+
 }
 
 .icons__list {
     display: flex;
-    margin-top: 50px;
+    flex-wrap: wrap;
     gap: 30px;
+    // margin-top: 30px;
+    // @include desktop {
+    // margin-top: 50px;
+    }
+.icons__item{
+    width: calc((100% - 30px) /2);
+    height: auto;
+    max-width: 100%;
+    
+    @include tablet {
+        width: calc((100% - 60px) /3);
+        }
+    
+    @include desktop {
+        width: calc((100% - 150px) /6);
+        }
 }
 

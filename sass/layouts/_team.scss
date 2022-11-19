@@ -9,6 +9,7 @@
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
 .people__text {
@@ -19,8 +20,9 @@
 
 .people__list {
     display: flex;
-    margin-top: 50px;
+    flex-wrap: wrap;
     gap: 30px;
+    // margin-top: 30px;
 }
 
 .people__card {
@@ -29,11 +31,16 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
-
-.people__title {
-    margin-bottom: 10px;
-}
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    @include tablet {
+    width: calc((100% - 30px) /2);
+        }
+    @include desktop {
+    width: calc((100% - 90px) /4);
+        }
+    }
 
 .people__information {
     padding-top: 30px;
