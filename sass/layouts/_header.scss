@@ -2,8 +2,8 @@
     border-bottom: 1px solid #eeeeee;
 }
 .header__container {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 }
 .site-nav .link {
     padding-top: 32px;
@@ -39,14 +39,16 @@
 }
 }
 .site-nav {
-    display: flex;
-    align-items: center;
-    margin-left: 93px;
-    gap: 50px;
+    // display: flex;
+    // align-items: center;
+    // margin-left: 93px;
+    // gap: 50px;
+    display: none;
 }
 
 .navigation {
-    display: flex;
+    // display: flex;
+    
 }
 
 .contacts.list .link {
@@ -81,8 +83,9 @@
 
 
 .contacts {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    gap: 50px;
+    // display: flex;
+    // align-items: center;
+    // margin-left: auto;
+    // gap: 50px;
+    display: none;
 }

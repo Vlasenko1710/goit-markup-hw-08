@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
-    <!-- Шапка -->
-    <!-- <header class="header">
+    <!-- Шапка
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a href="./index.html" class="logo">
@@ -57,10 +57,12 @@
       <section class="banner hero__banner">
         <div class="container hero__container">
           <div class="hero__wrap">
-          <h1 class="title banner__title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="btn banner__btn" data-modal-open>
-            Замовити послугу
-          </button>
+            <h1 class="title banner__title">
+              Ефективні рішення для вашого бізнесу
+            </h1>
+            <button type="button" class="btn banner__btn" data-modal-open>
+              Замовити послугу
+            </button>
           </div>
         </div>
       </section>
@@ -126,31 +128,58 @@
           <ul class="list pictures-list">
             <li>
               <div class="pictures-list__wrap">
-                <img
-                  src="./images/box_11.jpg"
-                  alt="руки на клавіатурі"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/pict-1-1x.jpg 1x,
+                      ./images/pict-1-2x.jpg 2x
+                    "
+                    media="(min-width=1200px)"
+                  />
+                  <img
+                    src="./images/pict-1-1x.jpg"
+                    alt="руки на клавіатурі"
+                    width="370"
+                  />
+                </picture>
                 <p class="pictures-list__text">Десктопні додатки</p>
               </div>
             </li>
             <li>
               <div class="pictures-list__wrap">
-                <img
-                  src="./images/box_22.jpg"
-                  alt="в руках телефон"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/pict-2-1x.jpg 1x,
+                      ./images/pict-2-2x.jpg 2x
+                    "
+                    media="(min-width=1200px)"
+                  />
+                  <img
+                    src="./images/pict-2-1x.jpg"
+                    alt="руки на клавіатурі"
+                    width="370"
+                  />
+                </picture>
                 <p class="pictures-list__text">Мобільні додатки</p>
               </div>
             </li>
             <li>
               <div class="pictures-list__wrap">
-                <img
-                  src="./images/box_33.jpg"
-                  alt="в руках планшет"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/pict-3-1x.jpg 1x,
+                      ./images/pict-3-2x.jpg 2x
+                    "
+                    media="(min-width=1200px)"
+                  />
+                  <img
+                    src="./images/pict-3-1x.jpg"
+                    alt="руки на клавіатурі"
+                    width="370"
+                  />
+                </picture>
                 <p class="pictures-list__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -163,11 +192,35 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="people__list list">
             <li class="people__card">
-              <img
-                src="./images/di1.jpg"
-                alt="чоловік в бордовій сорочці"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teams_photo-des-1-1x.jpg 1x,
+                    ./images/teams_photo-des-1-2x.jpg 2x
+                  "
+                  media="(min-width=1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams_photo-tab-1-1x.jpg 1x,
+                    ./images/teams_photo-tab-1-2x.jpg 2x
+                  "
+                  media="(min-width=768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams_photo-mob-1-1x.jpg 1x,
+                    ./images/teams_photo-mob-1-2x.jpg 2x
+                  "
+                  media="(max-width=768px)"
+                />
+                <img
+                  src="./images/teams_photo-des-1-1x.jpg"
+                  alt="чоловік в бордовій сорочці"
+                  width="450"
+                />
+              </picture>
+
               <div class="people__information">
                 <h3 class="people__title">Ігор Дем'яненко</h3>
                 <p lang="en" class="people__text">Product Designer</p>
@@ -213,7 +266,34 @@
               </div>
             </li>
             <li class="people__card">
-              <img src="./images/ro2.jpg" alt="жінка в костюмі" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teams_photo-des-2-1x.jpg 1x,
+                    ./images/teams_photo-des-2-2x.jpg 2x
+                  "
+                  media="(min-width=1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams_photo-tab-2-1x.jpg 1x,
+                    ./images/teams_photo-tab-2-2x.jpg 2x
+                  "
+                  media="(min-width=768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams_photo-mob-2-1x.jpg 1x,
+                    ./images/teams_photo-mob-2-2x.jpg 2x
+                  "
+                  media="(max-width=768px)"
+                />
+                <img
+                  src="./images/teams_photo-des-2-1x.jpg"
+                  alt="чоловік в бордовій сорочці"
+                  width="450"
+                />
+              </picture>
               <div class="people__information">
                 <h3 class="people__title">Ольга Рєпіна</h3>
                 <p lang="en" class="people__text">Frontend Developer</p>
@@ -258,11 +338,34 @@
               </div>
             </li>
             <li class="people__card">
-              <img
-                src="./images/tm3.jpg"
-                alt="чоловік в світлій сорочці"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teams_photo-des-3-1x.jpg 1x,
+                    ./images/teams_photo-des-3-2x.jpg 2x
+                  "
+                  media="(min-width=1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams_photo-tab-3-1x.jpg 1x,
+                    ./images/teams_photo-tab-3-2x.jpg 2x
+                  "
+                  media="(min-width=768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams_photo-mob-3-1x.jpg 1x,
+                    ./images/teams_photo-mob-3-2x.jpg 2x
+                  "
+                  media="(max-width=768px)"
+                />
+                <img
+                  src="./images/teams_photo-des-3-1x.jpg"
+                  alt="чоловік в бордовій сорочці"
+                  width="450"
+                />
+              </picture>
               <div class="people__information">
                 <h3 class="people__title">Микола Тарасов</h3>
                 <p lang="en" class="people__text">Marketing</p>
@@ -307,11 +410,34 @@
               </div>
             </li>
             <li class="people__card">
-              <img
-                src="./images/em4.jpg"
-                alt="чоловік в чорній футболці"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teams_photo-des-4-1x.jpg 1x,
+                    ./images/teams_photo-des-4-2x.jpg 2x
+                  "
+                  media="(min-width=1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams_photo-tab-4-1x.jpg 1x,
+                    ./images/teams_photo-tab-4-2x.jpg 2x
+                  "
+                  media="(min-width=768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams_photo-mob-4-1x.jpg 1x,
+                    ./images/teams_photo-mob-4-2x.jpg 2x
+                  "
+                  media="(max-width=768px)"
+                />
+                <img
+                  src="./images/teams_photo-des-4-1x.jpg"
+                  alt="чоловік в бордовій сорочці"
+                  width="450"
+                />
+              </picture>
               <div class="people__information">
                 <h3 class="people__title">Михайло Єрмаков</h3>
                 <p lang="en" class="people__text">UI Designer</p>
@@ -409,10 +535,10 @@
         </div>
       </section>
     </main>
-    <!-- Підвал
+    <!-- Підвал -->
     <footer class="footer">
       <div class="container footer-box">
-        <div class="adress-footer">
+        <div class="social-footer">
           <a href="./index.html" class="footer logo">
             <span class="logo web">Web</span>Studio
           </a>
@@ -484,7 +610,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Модальне вікно
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
