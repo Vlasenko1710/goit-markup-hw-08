@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
-    <!-- Шапка
+    <!-- Шапка -->
     <header class="header">
       <div class="container header__container">
         <nav class="navigation">
@@ -50,8 +50,13 @@
             >
           </li>
         </ul>
+        <button class="open-menu" data-menu-open>
+        <svg width="24" height="16">
+            <use href="./images/symbol-defs.svg#icon-menu_24px"></use>
+        </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <!--Герой-->
       <section class="banner hero__banner">
@@ -611,7 +616,7 @@
         </div>
       </div>
     </footer>
-    <!-- Модальне вікно
+    <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-modal-clic" data-modal-close>
@@ -684,7 +689,7 @@
             <label for="consent" class="check-label">
               <span
                 ><svg class="icon-check" width="16" height="15">
-                  <use href="./images/symbol-defs.svg#icon-check"></use></svg></span>
+                  <use href="./images/symbol-defs.svg#icon-check"></use></svg              ></span>
               Погоджуюся з розсилкою та приймаю
               <a href="" class="text-contract">Умови договору</a></label
             >
@@ -693,6 +698,45 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <!-- Меню хедер мобільний -->
+    <div class="backdrop__header is-hidden" data-menu>
+      <div class="menu-header">
+        <button class="close-menu" data-menu-close>
+          <svg width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <div class="menu-header__wrap">
+          <ul class="menu-header__nav list">
+            <li><a href="./index.html" class="link current line">Студія</a></li>
+            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li><a href="#" class="link">Контакти</a></li>
+          </ul>
+          <ul class="menu-header__contacts list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+          <ul class="menu-header__soc list">
+            <li>
+              <a class="menu-header__clic" href="">Instagram</a>
+            </li>
+            <li>
+              <a class="menu-header__clic" href="">Twitter</a>
+            </li>
+            <li>
+              <a class="menu-header__clic" href="">Facebook</a>
+            </li>
+            <li>
+              <a class="menu-header__clic" href="">LinkedIn</a>
+            </li>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

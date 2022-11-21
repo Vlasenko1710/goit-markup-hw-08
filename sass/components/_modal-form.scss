@@ -87,11 +87,20 @@
     display: flex;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+        line-height: 1.17;
+
     letter-spacing: 0.03em;
 
     color: var(--primari-text-color);
+    @media screen and (max-width: 479px) {
+            font-size: 7px;
+                line-height: 1.17;
+        }
+    @include desktop{
+    font-size: 14px;
+    line-height: 1.71;  
+    }   
 }
 
 .check-label span {

@@ -40,20 +40,13 @@
     .hero__container{
         padding: 0;
         width: 100%;
-        @include tablet {
-            // max-width: 720px;
-            // padding-right: 15px;
-            // padding-left: 15px;
-        }
-        @include desktop {
-            // max-width: 1200px;
-            // padding-right: 15px;
-            // padding-left: 15px;
-        }
-     
     }
 .hero__wrap{
     padding:118px 60px;
+    @media screen and (max-width: 479px) {
+            padding: 118px 25px;
+            line-height: 1.17;
+        }
     @include tablet {
     padding: 118px 204px;
     }
@@ -78,6 +71,10 @@ margin-right:auto;
     line-height: 1.42;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    @media screen and (max-width: 479px) {
+            font-size: 24px;
+            line-height: 1.42;
+        }
     @include desktop {
     max-width: 696px;  
     font-size: 44px;
