@@ -507,11 +507,14 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 48px 25px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   width: 100vw;
   height: 100vh;
   z-index: 1;
   background-color: var(--white-color);
+  transform: translate(0, 0) scaleY(1);
+  transition: transform var(--animation-link);
 }
 .backdrop__header.is-hidden .menu-header {
   transform: translate(-50%, -50%) scaleY(0);
@@ -617,6 +620,8 @@ img {
 
 .menu-header__soc {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   margin-top: 64px;
 }
